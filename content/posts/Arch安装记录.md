@@ -1,5 +1,5 @@
 +++
-date = '2025-01-03T22:32:29+08:00'
+date = '2025-01-03T22:44:10+08:00'
 draft = false
 title = 'Arch安装记录'
 +++
@@ -11,6 +11,7 @@ title = 'Arch安装记录'
 ```bash
 station wlan0 connect huaweif30
 ```
+
 
 
 #### 分区
@@ -31,6 +32,10 @@ https://support.microsoft.com/en-us/windows/create-installation-media-for-window
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+
+
+
 
 ---
 
@@ -75,11 +80,15 @@ sudo systemctl restart sshd
 scp /home/user/file.txt root@192.168.1.100:/tmp/
 ```
 
+
+
 #### 中文字体
 
 ```bash
 sudo pacman -S adobe-source-han-serif-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts noto-fonts-cjk noto-fonts
 ```
+
+
 
 #### 安装 yay
 
@@ -90,11 +99,14 @@ makepkg -si
 ```
 
 
+
 #### 安装 clash-verge
 
 ```bash
 yay -S clash-verge-rev-bin
 ```
+
+
 
 #### 配置 zsh
 
@@ -150,6 +162,8 @@ source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 chsh -s /bin/zsh
 ```
 
+
+
 ## prasanthrangan 主题
 
 - 高分屏配置2倍缩放
@@ -157,6 +171,8 @@ chsh -s /bin/zsh
 `monitor = ,highres,auto,2`
 
 - 禁用  rainbow borders animation
+
+
 
 
 
@@ -183,6 +199,7 @@ env = XMODIFIERS,@im=fcitx
 - PR_END_OF_FILE_ERROR
 
 
+
 #### 快捷键
 
 - 将 caps大小写绑定 super
@@ -192,6 +209,7 @@ input {
 	kb_options = caps:super
 }
 ```
+
 
 
 #### Kitty 美化
@@ -236,6 +254,8 @@ cd paru
 makepkg -si
 ```
 
+
+
 #### 安装QQ
 
 - 缩放
@@ -244,6 +264,7 @@ makepkg -si
 ~/.local/share/applications/slack.desktop
 Exec=env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack --force-device-scale-factor=1.5 %U
 ```
+
 
 
 #### nvim 配置 C++ 环境
@@ -262,7 +283,15 @@ Exec=env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack --force-device-scale-fa
 code --enable-wayland-ime
 ```
 
+
+
+
+
+
+
 ---
+
+
 
 ## 备份与系统迁移
 

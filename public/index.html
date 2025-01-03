@@ -128,7 +128,7 @@
 
 <article class="first-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Arch安装记录
     </h2>
   </header>
   <div class="entry-content">
@@ -136,8 +136,8 @@
 直接在固态硬盘上继续新建分区 先正常安装arch的引导 进入arch后安装os-prober寻找windows系统 重新执行 grub-mkconfig -o /boot/grub/grub.cfg pacman 并行下载 vim /etc/pacman.conf 取消Parallel和Color的注释 配置DHCP与DNS /etc/resolv.conf nameserver 8.8.8.8 nameserver 114.114.114.114 /etc/systemd/network/1.network dhcp = yes 开放 ssh 端口 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT sudo systemctl restart iptables sudo systemctl restart sshd scp传输示例 scp /home/user/file.txt root@192.168.1.100:/tmp/ 中文字体 sudo pacman -S adobe-source-han-serif-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts noto-fonts-cjk noto-fonts 安装 yay git clone https://aur.archlinux.org/yay-bin.git cd yay-bin makepkg -si 安装 clash-verge yay -S clash-verge-rev-bin 配置 zsh sudo pacman -S zsh chsh -s /bin/zsh sh -c &#34;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&#34; ##如果不成功，请执行下面两条命令，成功了就不需要做下面两条 wget 47.93.11.51:88/install_zsh.sh bash install_zsh.sh git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 使用命令vim .zshrc打开.zshrc文件，找到plugins=()这一行，将zsh-syntax-highlighting添加进去 plugins=(git zsh-syntax-highlighting) 安装其他插件 ##命令自动补全插件 mkdir ~/.oh-my-zsh/plugins/incr wget http://mimosa-pudica.net/src/incr-0.2.zsh -O ~/.oh-my-zsh/plugins/incr/incr.plugin.zsh ##命令自动推荐，根据历史记录 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ##目录自动跳转插件 sudo apt install autojump ( cd $ZSH_CUSTOM/plugins &amp;&amp; git clone https://github.com/chrissicool/zsh-256color ) 使用命令vim .zshrc，打开后在最后插入以下内容： #设置终端颜色，提示符，及上一条指令返回码提示 autoload -U colors &amp;&amp; colors PROMPT=&#34;%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%# &#34; RPROMPT=&#34;[%{$fg[yellow]%}%?%{$reset_color%}]&#34; # Useful support for interacting with Terminal.app or other terminal programs [ -r &#34;/etc/zshrc_$TERM_PROGRAM&#34; ] &amp;&amp; . &#34;/etc/zshrc_$TERM_PROGRAM&#34; source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh source /usr/share/autojump/autojump.sh source ~/.oh-my-zsh/plugins/incr/incr*.zsh 修改默认shell chsh -s /bin/zsh prasanthrangan 主题 高分屏配置2倍缩放 monitor = ,highres,auto,2
 ...</p>
   </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to " href="https://yuk1dev.github.io/posts/arch%E5%AE%89%E8%A3%9D/"></a>
+  <footer class="entry-footer"><span title='2025-01-03 22:44:10 +0800 CST'>January 3, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Arch安装记录" href="https://yuk1dev.github.io/posts/arch%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"></a>
 </article>
     </main>
     
