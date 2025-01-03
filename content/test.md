@@ -1,7 +1,7 @@
 +++
 date = '2025-01-03T22:32:29+08:00'
 draft = false
-title = 'Test'
+title = 'Arch安装记录'
 +++
 
 #### 联网
