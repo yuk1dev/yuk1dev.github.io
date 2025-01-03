@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Posts | aoi的菜谱</title>
+<title>Posts | aoi的菜谱小站</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - aoi的菜谱">
+<meta name="description" content="Posts - aoi的菜谱小站">
 <meta name="author" content="">
 <link rel="canonical" href="https://yuk1dev.github.io/posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
@@ -57,7 +57,7 @@
 
     </style>
 </noscript><meta property="og:url" content="https://yuk1dev.github.io/posts/">
-  <meta property="og:site_name" content="aoi的菜谱">
+  <meta property="og:site_name" content="aoi的菜谱小站">
   <meta property="og:title" content="Posts">
   <meta property="og:locale" content="cn-zh">
   <meta property="og:type" content="website">
@@ -97,7 +97,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://yuk1dev.github.io/" accesskey="h" title="aoi的菜谱 (Alt + H)">aoi的菜谱</a>
+            <a href="https://yuk1dev.github.io/" accesskey="h" title="aoi的菜谱小站 (Alt + H)">aoi的菜谱小站</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -134,19 +134,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Test
+    <h2 class="entry-hint-parent">
     </h2>
   </header>
   <div class="entry-content">
-    <p></p>
+    <p>联网 无线 station wlan0 connect huaweif30 分区 如何安装双系统 先安装windows， 注意EFI分区需要分大点，如800M https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d#ID0EJD=Windows_10
+直接在固态硬盘上继续新建分区 先正常安装arch的引导 进入arch后安装os-prober寻找windows系统 重新执行 grub-mkconfig -o /boot/grub/grub.cfg pacman 并行下载 vim /etc/pacman.conf 取消Parallel和Color的注释 配置DHCP与DNS /etc/resolv.conf nameserver 8.8.8.8 nameserver 114.114.114.114 /etc/systemd/network/1.network dhcp = yes 开放 ssh 端口 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT sudo systemctl restart iptables sudo systemctl restart sshd scp传输示例 scp /home/user/file.txt root@192.168.1.100:/tmp/ 中文字体 sudo pacman -S adobe-source-han-serif-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-code-pro-fonts noto-fonts-cjk noto-fonts 安装 yay git clone https://aur.archlinux.org/yay-bin.git cd yay-bin makepkg -si 安装 clash-verge yay -S clash-verge-rev-bin 配置 zsh sudo pacman -S zsh chsh -s /bin/zsh sh -c &#34;$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&#34; ##如果不成功，请执行下面两条命令，成功了就不需要做下面两条 wget 47.93.11.51:88/install_zsh.sh bash install_zsh.sh git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting 使用命令vim .zshrc打开.zshrc文件，找到plugins=()这一行，将zsh-syntax-highlighting添加进去 plugins=(git zsh-syntax-highlighting) 安装其他插件 ##命令自动补全插件 mkdir ~/.oh-my-zsh/plugins/incr wget http://mimosa-pudica.net/src/incr-0.2.zsh -O ~/.oh-my-zsh/plugins/incr/incr.plugin.zsh ##命令自动推荐，根据历史记录 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ##目录自动跳转插件 sudo apt install autojump ( cd $ZSH_CUSTOM/plugins &amp;&amp; git clone https://github.com/chrissicool/zsh-256color ) 使用命令vim .zshrc，打开后在最后插入以下内容： #设置终端颜色，提示符，及上一条指令返回码提示 autoload -U colors &amp;&amp; colors PROMPT=&#34;%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%1~ %{$reset_color%}%# &#34; RPROMPT=&#34;[%{$fg[yellow]%}%?%{$reset_color%}]&#34; # Useful support for interacting with Terminal.app or other terminal programs [ -r &#34;/etc/zshrc_$TERM_PROGRAM&#34; ] &amp;&amp; . &#34;/etc/zshrc_$TERM_PROGRAM&#34; source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh source /usr/share/autojump/autojump.sh source ~/.oh-my-zsh/plugins/incr/incr*.zsh 修改默认shell chsh -s /bin/zsh prasanthrangan 主题 高分屏配置2倍缩放 monitor = ,highres,auto,2
+...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-01-03 22:00:08 +0800 CST'>January 3, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Test" href="https://yuk1dev.github.io/posts/test/"></a>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="https://yuk1dev.github.io/posts/arch%E5%AE%89%E8%A3%9D/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://yuk1dev.github.io/">aoi的菜谱</a></span> · 
+        <span>&copy; 2025 <a href="https://yuk1dev.github.io/">aoi的菜谱小站</a></span> · 
 
     <span>
         Powered by

@@ -1,5 +1,5 @@
 baseURL = 'https://yuk1dev.github.io/'
 languageCode = 'cn-zh'
-title = 'aoi的菜谱'
+title = 'aoi的菜谱小站'
 
 theme = 'PaperMod'
